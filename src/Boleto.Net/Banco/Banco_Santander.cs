@@ -866,8 +866,8 @@ namespace BoletoNet
                 //Número de dias para protesto ==> 222 - 223
                 _segmentoP += dias_protesto;
 
-                //Código para Baixa/Devolução ==> 222 - 223
-                _segmentoP += "3";
+                //Código para Baixa/Devolução ==> 224 - 224
+                _segmentoP += Utils.FitStringLength(boleto.CodigoBaixaDevolucao.ToString(), 1, 1, '0', 0, true, true, true);
 
                 //Reservado (uso Banco) ==> 225 – 225
                 _segmentoP += "0";

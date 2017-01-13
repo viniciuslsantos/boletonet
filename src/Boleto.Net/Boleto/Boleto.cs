@@ -63,6 +63,7 @@ namespace BoletoNet
 		private short _percentualIOS;
         private short _modalidadeCobranca = 0;
         private short _numeroDiasBaixa = 0;
+        private short _codigoBaixaDevolucao = 3;
 
 		private string _tipoModalidade = string.Empty;
 		private Remessa _remessa;
@@ -546,6 +547,16 @@ namespace BoletoNet
             get { return this._numeroDiasBaixa; }
             set { this._numeroDiasBaixa = value; }
         }
+
+        /// <summary> 
+        /// Código para Baixa/Devolução
+        /// </summary>
+        public short CodigoBaixaDevolucao
+        {
+            get { return this._codigoBaixaDevolucao; }
+            set { this._codigoBaixaDevolucao = value; }
+        }
+
         /// <summary>
         /// Retorna os Parâmetros utilizados na geração da Remessa para o Boleto
         /// </summary>
